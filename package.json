@@ -1,6 +1,6 @@
 {
   "name": "avr-llm-gemini",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Agent Voice Response <info@agentvoiceresponse.com>",
   "description": "Gemini LLM service for Agent Voice Response",
   "main": "index.js",
@@ -11,11 +11,18 @@
     "dc:push": "docker push agentvoiceresponse/avr-llm-gemini:latest && docker push agentvoiceresponse/avr-llm-gemini:${npm_package_version}"
   },
   "dependencies": {
+    "@google/genai": "^1.34.0",
+    "axios": "^1.13.4",
     "dotenv": "^17.2.4",
-    "express": "^5.2.1",
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
   },
-  "contributors": []
+  "contributors": [
+    {
+      "name": "Zohair Raza",
+      "url": "https://github.com/zohairraza"
+    }
+  ]
 }
